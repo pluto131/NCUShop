@@ -23,14 +23,14 @@ public class CommDAO {
         conn = this.getConn();
     }
     /**
-     * 256b5e60fddeb3d8
+     * 连接数据库
      * @return
      */
     public Connection getConn() {
         try {
             if (conn == null || conn.isClosed()) {
 			        	 Class.forName("com.mysql.cj.jdbc.Driver");
-			        	 conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/NCUShop?useUnicode=true&characterEncoding=UTF-8&useSSL=FALSE&serverTimezone=UTC&useOldAliasMetadataBehavior=true","root","256b5e60fddeb3d8");
+			        	 conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/NCUShop?useUnicode=true&characterEncoding=UTF-8&useSSL=FALSE&serverTimezone=UTC&useOldAliasMetadataBehavior=true","root","123456");
 			        	 
 
             }
